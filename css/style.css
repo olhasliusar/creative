@@ -4976,6 +4976,12 @@ a:hover {
   }
 }
 
+.icon-bar {
+  border: solid #D8553F;
+  border-width: 1px 1px 1px 0;
+  border-radius: 0 3px 3px 0;
+}
+
 .icon-bar.large-vertical {
   position: fixed !important;
   top: 35vh;
@@ -4986,15 +4992,14 @@ a:hover {
 .icon-bar .item {
   border-top: 1px solid #FC8161;
   border-bottom: 1px solid #F3543B;
-  border-right: 1px solid #D8553F;
 }
 
 .icon-bar .item:first-child {
-  border-top: 1px solid #D8553F;
+  border-top: 0;
 }
 
 .icon-bar .item:last-child {
-  border-bottom: 1px solid #D8553F;
+  border-bottom: 0;
 }
 
 .icon-bar.four-up.large-vertical .item {
@@ -5005,6 +5010,8 @@ a:hover {
   fill: #bb341b;
   width: 25px;
   height: 25px;
+  filter: drop-shadow(0px 1px 0 rgba(255, 255, 255, 0.6));
+  -webkit-filter: drop-shadow(0px 1px 0 rgba(255, 255, 255, 0.6));
 }
 
 .ba-main-content {
@@ -5079,8 +5086,8 @@ a:hover {
   top: -46px;
   left: 40px;
   background-color: white;
-  border-top: 1px solid #d7d7d7;
-  border-left: 1px solid #d7d7d7;
+  border: solid #d7d7d7;
+  border-width: 1px 0 0 1px;
   width: 24px;
   height: 24px;
   transform: rotate(45deg);
